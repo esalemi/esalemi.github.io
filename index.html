@@ -210,11 +210,15 @@
            
             var Dosevalue = document.createElement('input');
             Dosevalue.setAttribute('id', 'DoseValue_' + Doses);
+            Dosevalue.setAttribute('pattern', '[0-9]');
+            Dosevalue.setAttribute('type', 'number');
 
 
             var Dosenumber = document.createElement('input');
             Dosenumber.setAttribute('id', 'DoseNumber_' + Doses);
             Dosenumber.setAttribute('value', 1);
+             Dosenumber.setAttribute('pattern', '[0-9]');
+             Dosenumber.setAttribute('type', 'number');
 
             var DoseName = document.createElement('select');
             DoseName.setAttribute('id', 'DoseName_' + Doses);
